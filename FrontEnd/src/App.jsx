@@ -10,10 +10,10 @@ function App() {
   const [sortBy, setSortBy] = useState(""); 
 
   useEffect(() => {
-    const baseUrl = "http://localhost:5000/api/products";
+    const baseUrl = "https://casestudy-abo4.onrender.com/api/products"; 
     const url = sortBy ? `${baseUrl}?sort=${sortBy}` : baseUrl;
-    
-    console.log("📡 API çağrısı:", sortBy);
+
+    console.log("📡 API çağrısı:", url);
 
     axios.get(url)
       .then((res) => {
@@ -29,7 +29,6 @@ function App() {
         Products List
       </h1>
 
-      {}
       <div className="mb-4 text-center">
         <span className="sort-heading d-block mb-2">Sırala:</span>
 
