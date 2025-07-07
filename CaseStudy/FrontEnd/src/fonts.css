@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "AvenirBook";
+  src: url("./assets/Fonts/avenir/Avenir-Book.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MontserratMedium";
+  src: url("./assets/Fonts/montserat/Montserrat-Medium.otf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "MontserratRegular";
+  src: url("./assets/Fonts/montserat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+}

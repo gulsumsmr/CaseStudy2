@@ -1,0 +1,58 @@
+.swiper-scrollbar {
+  height: 10px !important;
+  background-color: #e6e6e6;
+  border-radius: 6px;
+  margin-top: 16px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15); 
+}
+
+.swiper-scrollbar-drag {
+  background-color: #797773; 
+  border-radius: 6px;
+  cursor: grab;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+  transition: background-color 0.3s ease;
+}
+
+.swiper-scrollbar-drag:hover {
+  background-color: #cbc5ba; 
+}
+
+.carousel-wrapper {
+  position: relative;
+  padding: 0 50px; 
+}
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 38%;
+  z-index: 10;
+  font-size: 40px;      
+  color: #bbb;           
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  color: #888;           
+}
+
+.arrow-left {
+  left: -25px;
+}
+
+.arrow-right {
+  right: -25px;
+}
+
+.arrow-left::after {
+  content: "<";          
+}
+
+.arrow-right::after {
+  content: ">";           
+}
